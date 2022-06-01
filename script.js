@@ -33,8 +33,8 @@ function Registration(){
 }
 
 function Auth() {
-    Email=document.getElementById("Email").value;
-    pass=document.getElementById("Pass").value;
+    Email=document.getElementById("email").value;
+    pass=document.getElementById("pass").value;
     if(Email=="Bob@1"&&pass=="1"){
         alert("Вы вошли")
     }
