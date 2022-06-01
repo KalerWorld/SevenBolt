@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Регистрация</title>
+</head>
+<body>
+        <div class="input-fields">
+            <div class="Menu">
+                <div class="MenuText" id="RegMenu" onclick="ChangeMode('Reg')">Регистрация</div>
+                <div class="MenuText DeActive" id="AuthMenu" onclick="ChangeMode('Auth')" style="margin-left:18px;">Авторизация</div>
+            </div>
+            <div class="Reg" id="Reg">
+                <form action="" method="post">
+                    <div class="InputField">
+                        <div class="Inputs">
+                            <input type="text"name="user" id="Name" value="" required placeholder="Ф.И.О">
+                        </div>
+                        <div class="Inputs">
+                            <input type="email" name="email" id="Email" value="" required placeholder="Почта">
+                        </div>
+                        <div class="Inputs">
+                            <input type="password" name="Pass" id="Pass" value="" required placeholder="Пароль">
+                        </div>
+                        <div class="Inputs">
+                            <input type="password" name="Pass1" id="Pass1" value="" required placeholder="Повтор пароля">
+                        </div>
+                        <button type="submit" onclick="Registration()">Зарегестрироваться</button>
+                    </div>
+                </form>
+            </div>
+            <div class="Auth hidden" id="Auth">
+                <div class="InputField">
+                    <div class="Inputs">
+                        <input type="email" name="" id="email" required placeholder="Почта">
+                    </div>
+                    <div class="Inputs">
+                        <input type="password" name="" id="pass" placeholder="Пароль">
+                    </div>
+                    <button type="submit" onclick="Auth()">Войти</button>
+                    </div>
+            </div>
+        </div>
+        <div class="Welcome">Станьте клиентом</div>
+        <div class="Rectangle"></div>
+        <div class="Darker">
+            <img src="Icons/back.webp" alt="">
+        </div>
+        
+</body>
+</html>
